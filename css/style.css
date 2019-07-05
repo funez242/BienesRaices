@@ -1,0 +1,57 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+
+/*globales*/
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+    /* arriba derecha izquierda abajo es igual a margin-left: auto margin-right:auto. tambien funciona "0 auto"*/
+    color: whitesmoke;
+}
+
+
+/*header*/
+
+.site-header.inicio {
+    background-image: url(../img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 600px;
+}
+
+.barra {
+    display: flex;
+    /*para activar flexbox en este elemento*/
+    justify-content: space-between;
+    /* distribuye los elementos uno q la iz y otro a la der*/
+    align-items: center;
+    /*aninea los elementos verticalmente*/
+    padding-top: 30px;
+    /*padding top sig espacio hacia adentro del elemento mientras margin es la separacion de otro elemento hacia afuera*/
+}
+
+
+/*Navegacion*/
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    /*para remover la decoracion de un texto, en este caso el subrayado del link*/
+    font-size: 20px;
+    margin-right: 20px
+}
+
+.navegacion a:last-of-type {
+    /*pseudo selectores, los dos puntos deben estar pegado a la etiqueta*/
+    margin: 0;
+    /*para quitarle el margen derecho al ultimo elemento*/
+}
+
+.navegacion a:hover {
+    /*pseudo selector hover hace que al posicionar el mouse sobre un elemento cambie su apariencia*/
+    color: blueviolet;
+}
