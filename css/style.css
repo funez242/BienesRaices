@@ -1,15 +1,24 @@
+html {
+    font-size: 62.5%/*reset para REMS - 62.5% = 10px de 16px**/
+}
+
 body {
     font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
 }
 
 
 /*globales*/
 
 .contenedor {
-    max-width: 1200px;
+    max-width: 120rem;
+    /*iguala 1200 rem*/
     margin: 0 auto 0 auto;
     /* arriba derecha izquierda abajo es igual a margin-left: auto margin-right:auto. tambien funciona "0 auto"*/
-    color: whitesmoke;
+}
+
+h1 {
+    font-size: 3.8rem;
 }
 
 
@@ -20,7 +29,22 @@ body {
     background-position: center center;
     background-size: cover;
     height: 100vh;
-    min-height: 600px;
+    min-height: 60rem;
+}
+
+.contenido-header {
+    height: 100%;
+    display: flex;
+    /*flexbox aplica solo al primer nivel de hijos de la etiqueta donde se uso la clase*/
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenido-header h1 {
+    color: whitesmoke;
+    padding-bottom: 3rem;
+    max-width: 60rem;
+    line-height: 2;
 }
 
 .barra {
@@ -30,7 +54,7 @@ body {
     /* distribuye los elementos uno q la iz y otro a la der*/
     align-items: center;
     /*aninea los elementos verticalmente*/
-    padding-top: 30px;
+    padding-top: 3rem;
     /*padding top sig espacio hacia adentro del elemento mientras margin es la separacion de otro elemento hacia afuera*/
 }
 
@@ -41,7 +65,8 @@ body {
     color: white;
     text-decoration: none;
     /*para remover la decoracion de un texto, en este caso el subrayado del link*/
-    font-size: 20px;
+    font-size: 1.8rem;
+    /*igual a 18px*/
     margin-right: 20px
 }
 
