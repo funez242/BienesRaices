@@ -5,6 +5,7 @@ html {
 body {
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
+    line-height: 1.7;
 }
 
 
@@ -12,13 +13,44 @@ body {
 
 .contenedor {
     max-width: 120rem;
-    /*iguala 1200 rem*/
+    /*iguala 1200 px*/
     margin: 0 auto 0 auto;
     /* arriba derecha izquierda abajo es igual a margin-left: auto margin-right:auto. tambien funciona "0 auto"*/
 }
 
+
+/*Estandarizamos nuestros headings*/
+
 h1 {
     font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.6rem;
+}
+
+
+/*Utilidades*/
+
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.centrar-texto {
+    text-align: center;
 }
 
 
@@ -67,7 +99,7 @@ h1 {
     /*para remover la decoracion de un texto, en este caso el subrayado del link*/
     font-size: 1.8rem;
     /*igual a 18px*/
-    margin-right: 20px
+    margin-right: 2rem;
 }
 
 .navegacion a:last-of-type {
@@ -79,4 +111,22 @@ h1 {
 .navegacion a:hover {
     /*pseudo selector hover hace que al posicionar el mouse sobre un elemento cambie su apariencia*/
     color: blueviolet;
+}
+
+
+/* iconos nosotros*/
+
+.iconos-nosotros {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icono {
+    flex-basis: calc(33.3% - 2rem);
+    /* Antes se usaba with, con blexbox flex-basis*/
+    text-align: center;
+}
+
+.icono h3 {
+    text-transform: uppercase;
 }
